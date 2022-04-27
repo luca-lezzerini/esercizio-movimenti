@@ -1,0 +1,8 @@
+1) creare una lista di clienti (nome, cognome, codice fiscale, data di nascita, reddito annuo) con almeno 15 clienti.
+2) ordinare (usando comparatori classe) e stampare per nome ASC, per cognome ASC, per cognome + nome ASC
+3) ordinare (usando comparatori lambda) e stampare per nome DESC, cognome+nome DESC, reddito ASC, reddito DESC, codice fiscale ASC, data di nascita ASC, data di nascita DESC
+4) filtrare la lista con stream().filter(...).forEach(...) stampando solo i clienti che hanno reddito > 20_000, oppure sono nati dopo il 1999
+5) creare una classe ClienteUnico che sia un Singleton
+6) creare una factory di clienti per tre tipi di clienti: privato, azienda, no-profit
+7) creare un'abstract factory di clienti dei tre tipi suddetti, con relativi conti correnti (aziendale, personale, no-profit)
+8) Creare un set con gli stessi clienti e ripetere il passo 4) sul set invece che su una list
