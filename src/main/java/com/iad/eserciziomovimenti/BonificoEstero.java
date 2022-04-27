@@ -1,13 +1,11 @@
 package com.iad.eserciziomovimenti;
 
-public class BonificoEstero extends MovCC {
+import java.time.LocalDate;
 
-    public BonificoEstero(double importo) {
-        super(importo, 16.0);
+public class BonificoEstero extends UscitaCC {
+
+    public BonificoEstero(LocalDate data, double importo) {
+        super(data, importo, 16.0);
     }
 
-    @Override
-    public double getImporto() {
-        return -super.getImporto();
-    }
 }

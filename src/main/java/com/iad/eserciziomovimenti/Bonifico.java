@@ -1,9 +1,11 @@
 package com.iad.eserciziomovimenti;
 
+import java.time.LocalDate;
+
 public class Bonifico extends UscitaCC {
 
-    public Bonifico(double importo) {
-        super(importo, 2.0);
+    public Bonifico(LocalDate data, double importo) {
+        super(data, importo, 2.0);
     }
 
 }

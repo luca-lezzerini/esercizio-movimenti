@@ -1,15 +1,18 @@
-/*
- */
-
 package com.iad.eserciziomovimenti;
 
-/**
- *
- * @author use
- */
-public class Eserciziomovimenti {
+import java.util.List;
+
+public class EsercizioMovimenti {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+//        CollezioneDiEsempio coll = new CollezioneDiEsempio();
+        List<MovCC> lista = CollezioneDiEsempio.getMovimenti();
+        System.out.println("Dimensione lista = " + lista.size());
+
+        double saldo = 0.0;
+        for (MovCC mov : lista) {
+            saldo += mov.getImporto() - mov.getSpese();
+        }
+        System.out.println("Il saldo è " + saldo);
     }
 }

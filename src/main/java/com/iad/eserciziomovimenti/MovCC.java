@@ -1,16 +1,21 @@
 package com.iad.eserciziomovimenti;
 
+import java.time.LocalDate;
+
 public class MovCC {
 
+    private LocalDate data;
     private double importo;
     private double spese;
 
-    public MovCC(double importo) {
+    public MovCC(LocalDate data, double importo) {
+        this.data = data;
         this.importo = importo;
         spese = 0.0;
     }
 
-    public MovCC(double importo, double spese) {
+    public MovCC(LocalDate data, double importo, double spese) {
+        this.data = data;
         this.importo = importo;
         this.spese = spese;
     }
@@ -29,6 +34,14 @@ public class MovCC {
 
     public void setSpese(double spese) {
         this.spese = spese;
+    }
+
+    public LocalDate getData() {
+        return data;
+    }
+
+    public void setData(LocalDate data) {
+        this.data = data;
     }
 
     @Override

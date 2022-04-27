@@ -1,9 +1,11 @@
 package com.iad.eserciziomovimenti;
 
-public class Stipendio extends MovCC{
+import java.time.LocalDate;
 
-    public Stipendio(double importo) {
-        super(importo);
+public class Stipendio extends MovCC {
+
+    public Stipendio(LocalDate data, double importo) {
+        super(data, importo);
     }
 
 }

@@ -1,13 +1,11 @@
 package com.iad.eserciziomovimenti;
 
+import java.time.LocalDate;
+
 public class AddebitoRid extends UscitaCC {
 
-    public AddebitoRid(double importo) {
-        super(importo, 1.5);
+    public AddebitoRid(LocalDate data, double importo) {
+        super(data, importo, 1.5);
     }
 
-    @Override
-    public double getImporto() {
-        return -super.getImporto();
-    }
 }
