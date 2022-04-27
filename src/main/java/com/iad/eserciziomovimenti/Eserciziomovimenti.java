@@ -14,5 +14,14 @@ public class EsercizioMovimenti {
             saldo += mov.getImporto() - mov.getSpese();
         }
         System.out.println("Il saldo è " + saldo);
+        
+        // ordinamento
+        ConfrontatorePerImporto cimp = new ConfrontatorePerImporto();
+        lista.sort(cimp);
+        
+        System.out.println("Ordinata per importo crescente");
+        for (MovCC mov : lista) {
+            System.out.println("Mov = " + mov);
+        }
     }
 }
