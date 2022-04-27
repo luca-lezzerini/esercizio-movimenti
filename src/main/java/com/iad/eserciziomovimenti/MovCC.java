@@ -46,7 +46,8 @@ public class MovCC {
 
     @Override
     public String toString() {
-        return "MovCC{" + "importo=" + getImporto() + ", spese=" + spese + '}';
+        return "MovCC{" + "data=" + data + ", importo=" + getImporto() + ", spese=" + spese + '}';
     }
+
 
 }
